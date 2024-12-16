@@ -1,5 +1,12 @@
-function App() {
-  return <p>Hello, World!</p>;
+import React from 'react'
+import './App.css'
+import ExamplePage from 'templates/ExamplePage'
+const App = () => {
+  return (
+    <div className='app'>
+      <ExamplePage />
+    </div>
+  )
 }
 
-export default App;
+export default App
