@@ -1,9 +1,10 @@
 import React from 'react'
 import Header from '../components/Header/Header'
-import Card from '../components/Card/Card'
+// import Card from '../components/Cards/Card/Card'
+import CardsRow from 'components/CardsBloks/CardsRow/CardsRow'
 // import Form from '../components/Form/Form'
-import CardCarousel from 'components/CardCarousel/CardCarousel'
-import CardForCarousel from 'components/CardForCarousel/CardForCarousel'
+// import CardCarousel from 'components/Cards/CardCarousel/CardCarousel'
+// import CardForCarousel from 'components/CardsBloks/CardForCarousel/CardForCarousel'
 import './ExamplePage.css'
 
 const ExamplePage = () => {
@@ -11,13 +12,13 @@ const ExamplePage = () => {
     <div className='example-page'>
       <Header />
       <div className='content'>
-        <Card
+        {/* <Card
           title='Card Title'
           content='This is a card description.'
           imageUrl='https://via.placeholder.com/150'
-        />
+        /> */}
 
-        <div className='section2'>
+        {/* <div className='section2'>
           <CardCarousel>
             <CardForCarousel
               title='Card 1'
@@ -40,7 +41,8 @@ const ExamplePage = () => {
               content='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
             />
           </CardCarousel>
-        </div>
+        </div> */}
+        <CardsRow />
         {/* <Form /> */}
       </div>
     </div>

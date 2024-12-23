@@ -1,0 +1,30 @@
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-family: 'Rubik', sans-serif;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 1 1 100%; /* Одна картка на маленьких екранах */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 600px) {
+  .card {
+    flex: 1 1 calc(50% - 1rem); /* Дві картки на середніх екранах */
+    max-width: calc(50% - 1rem);
+  }
+}
+
+@media (min-width: 800px) {
+  .card {
+    flex: 1 1 calc(25% - 1rem); /* Чотири картки на великих екранах */
+    max-width: calc(25% - 1rem);
+  }
+}
