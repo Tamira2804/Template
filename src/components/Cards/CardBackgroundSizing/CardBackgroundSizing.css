@@ -1,0 +1,87 @@
+.border {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+  color: #fff;
+}
+
+.border:hover {
+  border: 1px solid white;
+}
+
+.border:hover > h2 {
+  opacity: 1;
+}
+.border:hover > .icons {
+  opacity: 1;
+}
+
+.cards {
+  position: relative;
+  width: 300px;
+  height: 379px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+  box-shadow: 0 70px 63px -60px #000000;
+}
+
+/*  transition: background 0.8s;*/
+
+.cards::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--background-image);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: transform 0.8s ease;
+  z-index: -1;
+}
+
+.cards:hover::before {
+  transform: scale(2) translateX(25%); /* Збільшення у 2 рази і зміщення на 50% ширини */
+}
+
+.icons {
+  position: absolute;
+  fill: #fff;
+  color: #fff;
+  height: 130px;
+  top: 226px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  opacity: 0;
+  transition: transform 0.8s ease;
+}
+
+.icons a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.icons :hover {
+  transform: scale(1.2);
+  color: #ffd700; /* Жовтий колір при ховері */
+}
+
+h2 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: white;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
